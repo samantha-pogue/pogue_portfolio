@@ -1,0 +1,107 @@
+body {
+  background-color: white;
+  /*background-image: url("grid.png"); add later*/
+}
+
+/* Navigation bar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+/*end navigation bar*/
+
+/*homepage*/
+
+.homecolumn {
+  float: left;
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* Left and right column */
+.homecolumn.photo {
+  width: 25%;
+  padding-right: 25px;
+  padding-left: 85px;
+}
+
+/* Middle column */
+.homecolumn.text {
+  width: 50%;
+  padding-right: 70px;
+  padding-left: 25px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*single column*/
+.singlecolumn {
+  float: left;
+  font-family: 'Open Sans', sans-serif;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/*resume columns*/
+.resumecolumn {
+  float: left;
+  font-family: 'Open Sans', sans-serif;
+  padding-left: 75px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+
+}
+
+.resumecolumn.left {
+  float: left;
+}
+
+.resumecolumn.right {
+  float: right;
+  text-align: right;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px;
+  color: white;
+}
+
+.footer.text {
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
