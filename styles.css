@@ -59,6 +59,8 @@ li a:hover {
 
 /* Clear floats after the columns */
 .row:after {
+  display: flex;
+  flex-direction: row;
   content: "";
   display: table;
   clear: both;
@@ -104,4 +106,21 @@ li a:hover {
   padding-right: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
+}
+
+/*flexbox stuff*/
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+
+.flex-container > div {
+  font-family: 'Open Sans', sans-serif;
+  background-color: white;
+  width: 400px;
+  margin: 10px;
+  text-align: left;
 }
