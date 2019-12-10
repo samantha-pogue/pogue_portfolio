@@ -34,6 +34,24 @@ li a:hover {
 
 /*end navigation bar*/
 
+/*link styling*/
+
+a:link{
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+a.body {
+  color: black;
+}
+
+a.footer {
+  color: white;
+}
+
 /*homepage*/
 
 .homecolumn {
@@ -43,21 +61,7 @@ li a:hover {
   padding-bottom: 50px;
 }
 
-/* Left and right column */
-.homecolumn.photo {
-  width: 25%;
-  padding-right: 25px;
-  padding-left: 85px;
-}
-
-/* Middle column */
-.homecolumn.text {
-  width: 50%;
-  padding-right: 70px;
-  padding-left: 25px;
-}
-
-/* Clear floats after the columns */
+/* Clear floats after the columns on resume page*/
 .row:after {
   display: flex;
   flex-direction: row;
@@ -66,31 +70,12 @@ li a:hover {
   clear: both;
 }
 
-/*single column*/
+/*single column on resume page*/
 .singlecolumn {
   float: left;
   font-family: 'Open Sans', sans-serif;
   padding-left: 50px;
   padding-right: 50px;
-}
-
-/*resume columns*/
-.resumecolumn {
-  float: left;
-  font-family: 'Open Sans', sans-serif;
-  padding-left: 75px;
-  padding-right: 50px;
-  padding-bottom: 50px;
-
-}
-
-.resumecolumn.left {
-  float: left;
-}
-
-.resumecolumn.right {
-  float: right;
-  text-align: right;
 }
 
 /* Footer */
@@ -108,7 +93,7 @@ li a:hover {
   padding-left: 10px;
 }
 
-/*flexbox stuff*/
+/*flexbox container*/
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -120,7 +105,16 @@ li a:hover {
 .flex-container > div {
   font-family: 'Open Sans', sans-serif;
   background-color: white;
+  align-items: center;
   width: 400px;
   margin: 10px;
   text-align: left;
+}
+
+/*styling images*/
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
